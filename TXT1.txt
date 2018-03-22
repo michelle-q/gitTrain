@@ -1,0 +1,4 @@
+# 合并、撤销
+
+1.切换到需要合并的主分支如master，将其他分支合并到master上,合并前将分支上的修改commit。
+ > git merge test

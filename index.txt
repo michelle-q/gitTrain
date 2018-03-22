@@ -1,1 +1,41 @@
 # 练习git命令
+分支问题
+HEAD->分支-> 版本号
+
+1. git log 分支的信息，如提交信息，作者时间等。
+
+```
+git log --oneline --decorate
+
+$ git log
+commit 4fd6b02f5401042459c5f94477548fe8a4d7abf1
+Author: michelle-q <qianxuemei2015@163.com>
+Date:   Thu Mar 22 21:52:53 2018 +0800
+
+    index
+```
+查看当前分支指向的对象，使用参数--decorate
+
+
+
+```
+$ git log --oneline --decorate
+4fd6b02 (HEAD -> master, origin/master, test) index
+
+# 版本号4fd6b02
+```
+2. 切换分支
+
+```
+git checkout test
+
+```
+
+添加参数-b 切换并创建并切换分支
+
+```
+git checkout -b test
+
+```
+
+`注意：切换分支时，当前分支的改动需要commit，否则无法切换到其他分支`
